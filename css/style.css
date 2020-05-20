@@ -75,13 +75,80 @@ h1 {
 	right: 20px;
 }
 
-img {
+.covid-19-img {
 	padding: 20px;
 	width: 550px;
 	margin: 0 auto;
 }
-@media (max-width: 375px) {
-	.recommendations {
-		width: 75% !important;
-	}
+
+.share {
+  width: 45px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.share > ul {
+  width: 40px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.share > ul > li > a {  
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.share > ul > li > i {
+  margin: 2px 0 2px 0;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 20px;
+  color: white;
+  
+  cursor: pointer;
+}
+
+.share > ul > li > .fa-whatsapp {
+  background-color: #25d366; 
+  padding: 5px;
+}
+
+.share > ul > li > .fa-facebook {
+  background-color: #4267B2; 
+  padding: 5px;
+}
+
+.share > ul > li > .fa-facebook-messenger {
+  background-color: #0078FF; 
+  padding: 5px;
+}
+
+.visit-counter {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.visit-counter > img {
+  margin: 5px;
+  padding: 5px;
+  height: 11px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.visit-counter:before {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid black;
+  position: absolute;
 }

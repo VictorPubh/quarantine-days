@@ -20,3 +20,20 @@ setInterval(function () {
   document.getElementById('minutes').innerHTML = minutes
   document.getElementById('seconds').innerHTML = seconds
 }, 1000)
+
+// Função do Codepen.io/VictorPubh/pen/XWmpaVz
+function shareWith(social){
+  var message = "Veja a quanto tempos estamos de quarentena: https://victorpubh.github.io/quarantine-days/";
+  
+  switch(social){
+    case "WhatsApp":
+      window.open("http://wa.me/?text=" + message);
+    break;
+    case "Facebook":
+      window.open("https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https%3A%2F%2Fvictorpubh.github.io%2Fquarantine-days%2F&display=popup&ref=plugin&src=share_button", "_blank", "height=" + window.innerheight + ", width=" + window.innerwidth + ", resizable=no");      
+    break;
+    case "Messenger":
+      alert("Ooops! \nAlgo parece não funcionar bem.");
+    break;
+  }
+}

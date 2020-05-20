@@ -5,6 +5,8 @@
 	<title>Contador de Dias de Quarentena</title>
 
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 	<script src="./js/script.js"></script>
 
 </head>
@@ -51,14 +53,28 @@
 	</div>
 	<center>
 		<a title="Saiba mais." href="https://www.mpse.mp.br/index.php/coronavirus-covid-19/">
-			<img src="https://www.mpse.mp.br/wp-content/uploads/2020/03/Ativo-20135-1-1024x704.png"/>
+			<img class="covid-19-img" src="https://www.mpse.mp.br/wp-content/uploads/2020/03/Ativo-20135-1-1024x704.png"/>
 		</a>
 	</center>
 
-<!-- Inicia codigo Contador -->
-<div align="right">
-	<img src='https://megacontador.com.br/img-Qam7qXwvSbcAHEXO-22.gif' border='0' class="visitCounter" alt='Contador de visitas'></a>
+<!-- https://codepen.io/VictorPubh/pen/XWmpaVz -->
+<div class="share">
+  <ul>
+    <li onclick="shareWith('WhatsApp')">
+       <i class="fab fa-whatsapp hvr-shrink"></i>  
+    </li>
+    <li onclick="shareWith('Facebook')">
+       <i class="fab fa-facebook hvr-shrink"></i>
+    </li>
+    <li onclick="shareWith('Messenger')">
+      <i class="fab fa-facebook-messenger hvr-shrink"></i>
+    </li>
+  </ul>
+  <div class="visit-counter">
+    <img src="https://megacontador.com.br/img-123Qam7qXwvSbcAHEXO-22.gif" border="0" alt="Contador de visitas">
+  </div>
 </div>
-<!-- Fim do codigo Contador -->
+<!-- https://codepen.io/VictorPubh/pen/XWmpaVz -->
+
 </body>
 </html>
